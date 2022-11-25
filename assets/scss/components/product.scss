@@ -1,0 +1,80 @@
+.product{
+    background-color: $pink;
+    border-radius: 20px;
+    box-shadow: 0 6px 24px 0 $gray;
+    width: 100%;
+    @media (max-width: 768px) {
+        margin-top: 20px;     
+    }
+    &_area{
+        border-radius: 20px;
+        padding: 6% 30px;
+        max-width: 700px;
+        margin: 0 auto;
+        @media (max-width: 768px) {
+            max-width: 100%;
+            padding: 20px 30px;
+        }
+
+    }
+    &_textArea{
+        background-color: $white;
+        padding: 20px 30px;
+        height: 100%;
+        border-radius: 0px 20px 20px 0;
+        @media (max-width: 768px) {
+            border-radius: 0 0 20px 20px;
+        }
+    }
+    &_img{
+        height: 100%;
+        border-radius: 20px 0px 0px 20px;
+        @media (max-width: 768px) {
+            height: 255px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 20px 20px 0px 0px;
+        }
+    }
+    &_item{
+        display: inline-block;
+        color: $gray;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    &_brand{
+        color: $dark;
+        font-size: 38px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    &_desc{
+        color: $gray;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    &_price_last{
+        color: $green;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    &_price_old{
+        position: relative;
+        color: $gray;
+        font-size: 14px;
+        font-weight: 700;
+        margin-left: 20px;
+        &::after{
+            content: "";
+            position: absolute;
+            background: $gray;
+            height: 1px;
+            width: 100%;
+            left: 0;
+            top: 10px;
+        }
+    }
+
+}

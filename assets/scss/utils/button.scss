@@ -1,0 +1,18 @@
+.addBasket{
+    border: none;
+    border-radius: 10px;
+    background-color:  $green;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%; 
+    padding: 10px;
+    &:hover{
+        box-shadow: 0 6px 24px 0 $green;
+    }
+
+    i{
+        margin-right: 5px;
+    }
+}

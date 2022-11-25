@@ -1,0 +1,19 @@
+//Padding
+.p-0{
+    padding: 0;
+}
+
+//Margin
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.container{
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    @media (max-width: 768px) {
+       display: inherit;
+    }
+}

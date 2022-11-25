@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Lora", "Playfair Display", Arial, sans-serif;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .container {
+    display: inherit;
+  }
+}
+
+.addBasket {
+  border: none;
+  border-radius: 10px;
+  background-color: #408069;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+}
+.addBasket:hover {
+  box-shadow: 0 6px 24px 0 #408069;
+}
+.addBasket i {
+  margin-right: 5px;
+}
+
+.product {
+  background-color: #f3eae5;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px 0 #c8c8c8;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .product {
+    margin-top: 20px;
+  }
+}
+.product_area {
+  border-radius: 20px;
+  padding: 6% 30px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .product_area {
+    max-width: 100%;
+    padding: 20px 30px;
+  }
+}
+.product_textArea {
+  background-color: #ffffff;
+  padding: 20px 30px;
+  height: 100%;
+  border-radius: 0px 20px 20px 0;
+}
+@media (max-width: 768px) {
+  .product_textArea {
+    border-radius: 0 0 20px 20px;
+  }
+}
+.product_img {
+  height: 100%;
+  border-radius: 20px 0px 0px 20px;
+}
+@media (max-width: 768px) {
+  .product_img {
+    height: 255px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 0px 0px;
+  }
+}
+.product_item {
+  display: inline-block;
+  color: #c8c8c8;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.product_brand {
+  color: #000000;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.product_desc {
+  color: #c8c8c8;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.product_price_last {
+  color: #408069;
+  font-size: 35px;
+  font-weight: 700;
+}
+.product_price_old {
+  position: relative;
+  color: #c8c8c8;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+.product_price_old::after {
+  content: "";
+  position: absolute;
+  background: #c8c8c8;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  top: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
